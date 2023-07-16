@@ -148,5 +148,5 @@ for indexx in [1]:
 import os
 dataset_name = f"dataset_{len(os.listdir('/home/daniel_d_knudsen/csgo-market-analysis/datasets/'))}.pkl"
 
-with open("/home/daniel_d_knudsen/csgo-market-analysis/datasets/"+dataset_name, 'wb') as handle:
+with open("/home/daniel_d_knudsen/csgo-market-analysis/datasets/"+dataset_names, 'wb') as handle:
     pickle.dump(dataset, handle)
