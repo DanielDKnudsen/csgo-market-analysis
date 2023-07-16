@@ -1,4 +1,4 @@
-#%%
+#!/home/daniel_d_knudsen/.venv/bin/python
 import pandas as pd
 import urllib.parse
 import requests
