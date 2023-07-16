@@ -148,5 +148,5 @@ for indexx in [1]:
 import os
 dataset_name = f"dataset_{len(os.listdir('datasets/'))}.pkl"
 
-with open(dataset_name, 'wb') as handle:
+with open("datasets/"+dataset_name, 'wb') as handle:
     pickle.dump(dataset, handle)
