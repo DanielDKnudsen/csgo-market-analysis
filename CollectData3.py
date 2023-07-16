@@ -108,8 +108,10 @@ base_url = "https://steamcommunity.com/market/search/render/"
 
 window_size = 100
 i = 0
-# while True:
-for indexx in [1]:
+while True:
+# for indexx in [1]:
+    if i > 3000:
+        break
     print("Cursor", i)
     try:
         page = requests.get(
@@ -126,7 +128,7 @@ for indexx in [1]:
         header_idx += 1
         # for _ in range(20):
             # time.sleep(3)
-        time.sleep(120)
+        time.sleep(150)
         continue
     for res in page_json["results"]:
         weap = parse_weapon(res)
@@ -143,7 +145,7 @@ for indexx in [1]:
         weap.update(data)
         dataset[name] = weap.copy()
     i += window_size
-    break
+
 
 import os
 dataset_name = f"dataset_{len(os.listdir('/home/daniel_d_knudsen/csgo-market-analysis/datasets/'))}.pkl"
