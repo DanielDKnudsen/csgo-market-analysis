@@ -1,0 +1,8 @@
+matplotlib
+featuretools==0.23.2
+scipy
+pandas
+numpy
+tqdm
+requests
+openpyxl
